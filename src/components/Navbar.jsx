@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import "../App.css"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,10 +20,10 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="fixed top-0 w-full bg-yellow-300 shadow z-50">
+    <nav className="fixed top-0 w-full bg-[#ECE852] shadow z-50 raleway">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Brand */}
-        <h1 className="text-xl font-serif text-olive font-semibold">Madhur Pureline</h1>
+        <h1 className="text-xl text-olive font-semibold">Madhoor Pureline</h1>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-6 font-medium text-olive">
@@ -43,7 +44,7 @@ const Navbar = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-yellow-200 px-4 py-2 space-y-3 text-olive font-medium shadow-inner">
+        <div className="md:hidden bg-[#ECE852] px-4 py-2 space-y-3 text-olive font-medium shadow-inner">
           {navItems.map((item) => (
             <Link
               key={item.name}

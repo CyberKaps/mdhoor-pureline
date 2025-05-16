@@ -10,7 +10,7 @@ const About = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="px-6 md:px-16 py-16 bg-beige text-olive"
+      className="px-6 md:px-16 py-16 bg-[#73BBA3] text-olive"
     >
         <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-lime-100 via-yellow-100 to-amber-100"></div>
       <div className="max-w-7xl mx-auto">

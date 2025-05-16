@@ -32,7 +32,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <h1 className="text-6xl md:text-[110px] font-serif text-olive mb-4 leading-tigh raleway-heading text-lime-500 gradient-text">
+          <h1 className="text-6xl md:text-[110px] font-serif text-olive mb-4 leading-tigh raleway-heading text-[#9BEC00] gradient-text">
             <SplitText
               text="Madhoor Pureline"
               className="font-extrabold text-center text-shadow-lg text-shadow-gray-200"
@@ -45,7 +45,7 @@ const Hero = () => {
               onLetterAnimationComplete={handleAnimationComplete}
             />
           </h1>
-          <p className="text-2xl md:text-4xl font-medium text-gray-700">
+          <p className="text-2xl md:text-4xl font-medium text-white">
             The Pure Promise
           </p>
 
@@ -56,7 +56,7 @@ const Hero = () => {
           >
             <Link
               to="/products"
-              className="mt-6 inline-block bg-lime-500 hover:bg-yellow-500 transition-colors text-green font-bold py-3 px-6 rounded-xl shadow-lg"
+              className="mt-6 inline-block bg-[#9BEC00] text-white hover:bg-yellow-500 transition-colors text-green font-bold py-3 px-6 rounded-xl shadow-lg"
             >
               Explore More
             </Link>

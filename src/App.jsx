@@ -27,7 +27,7 @@ function App() {
     //   </div>
     //   <Footer />
     // </Router>
-   <div>
+   <div className='bg-[#73BBA3]'>
       <Navbar />
       <Home />
       <HeroCorousel />
