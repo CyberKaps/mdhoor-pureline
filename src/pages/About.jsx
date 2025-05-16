@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Leaf, Heart, Sprout } from 'lucide-react' // Use Lucide icons
 import aboutImg from '../assets/oilbottle.jpg' // Optional: add a related image
-
+import "../App.css"
 
 
 const About = () => {
@@ -10,13 +10,13 @@ const About = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="px-6 md:px-16 py-16 bg-[#73BBA3] text-olive"
+      className="px-6 md:px-16 py-16 bg-[#95be47] text-olive"
     >
         <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-lime-100 via-yellow-100 to-amber-100"></div>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-6 text-center">
-          About <span className="text-yellow-700">Madhur Pureline</span>
+        <h2 className="text-4xl md:text-5xl raleway font-semibold mb-6 text-center">
+          About <span className="text-yellow-700">Madhoor Pureline</span>
         </h2>
         <p className="text-lg text-center max-w-3xl mx-auto text-brown-700 mb-12">
           Rooted in tradition and driven by a passion for purity, Madhur Pureline delivers
@@ -24,7 +24,7 @@ const About = () => {
         </p>
 
         {/* Grid Content */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-10 items-center raleway">
           {/* Text Content */}
           <div className="space-y-6">
             <h3 className="text-4xl font-bold text-olive">Our Philosophy</h3>

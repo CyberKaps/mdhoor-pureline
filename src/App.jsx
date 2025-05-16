@@ -31,6 +31,7 @@ function App() {
       <Navbar />
       <Home />
       <HeroCorousel />
+      <Corousel />
       <About />
       <Product />
       <Process />

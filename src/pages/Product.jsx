@@ -6,6 +6,7 @@ import image from "../assets/oilbottle.jpg"
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "../App.css"
 
 
 
@@ -71,9 +72,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
         }, []);
 
     return (
-        <section id="Theme" className="font-[Ghr4]  text-white py-16 bg-[#ECE852] ">
+        <section id="Theme" className=" text-white py-16 bg-[#ECE852] raleway ">
         <div className="container mx-auto px-4 ">
-            <h2 className="font-[Ghr4] text-5xl mb-12 text-center text-white">
+            <h2 className="text-5xl mb-12 text-center text-white">
             Our Products
             </h2>
             <div className=" grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8 items-cente justify-center">

@@ -1,10 +1,39 @@
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
+import "../App.css"
 import Swal from 'sweetalert2'
+import { useEffect, useRef } from 'react'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Contact = () => {
   const { register, handleSubmit, reset } = useForm()
+
+
+  const formRef = useRef([]);
+
+        useEffect(() => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            formRef.current.forEach((form, index) => {
+                gsap.fromTo(
+                    form,
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        scrollTrigger: {
+                            trigger: form,
+                            start: "top 80%",
+                            end: "bottom 20%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            });
+        }, []);
 
   const onSubmit = (data) => {
     emailjs
@@ -39,51 +68,51 @@ const Contact = () => {
       <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-lime-100 via-yellow-100 to-amber-100" />
 
       <section className="max-w-4xl mx-auto p-6 space-y-6 bg-white bg-opacity-90 rounded-xl shadow-lg">
-        <h2 className="text-3xl font-serif font-semibold text-olive">Get In Touch</h2>
+        <h2 className="text-3xl font-semibold text-olive">Get In Touch</h2>
 
         {/* Contact Form */}
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <input
             {...register('name')}
             placeholder="Name"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
             required
           />
           <input
             {...register('email')}
             type="email"
             placeholder="Email"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
             required
           />
           <input
             {...register('mobile')}
             type="mobile"
             placeholder="Mobile"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
             required
           />
           <textarea
             {...register('message')}
             placeholder="Message"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
             required
           />
           <button
             type="submit"
-            className="bg-lime-500 text-black font-semibold py-2 px-6 rounded-xl hover:bg-yellow-500 transition"
+            className="bg-[#9BEC00] text-white font-semibold py-2 px-6 rounded-xl hover:bg-yellow-500 transition"
           >
             Send
           </button>
         </form>
 
         {/* Contact Info */}
-        <div className="pt-6 space-y-2 text-lg">
+        <div className="pt-6 space-y-2 text-lg raleway">
           <p>
-            📞 <a href="tel:+918530761040" className="text-lime-600 hover:underline">+91-853076xxxx</a>
+            📞 <a href="tel:+918530761040" className="text-[#9BEC00] hover:underline">+91-853076xxxx</a>
           </p>
           <p>
-            ✉️ <a href="mailto:madhoorpureline@gmail.com" className="text-lime-600 hover:underline">madhoorpureline@gmail.com</a>
+            ✉️ <a href="mailto:madhoorpureline@gmail.com" className="text-[#9BEC00] hover:underline">madhoorpureline@gmail.com</a>
           </p>
 
           {/* WhatsApp Button */}
@@ -91,7 +120,7 @@ const Contact = () => {
             href="https://wa.me/918530761040"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 bg-lime-500 hover:bg-yellow-500 text-white font-bold py-2 px-6 rounded-xl shadow transition"
+            className="inline-block mt-4 bg-[#9BEC00] hover:bg-yellow-500 text-white font-bold py-2 px-6 rounded-xl shadow transition"
           >
             Chat on WhatsApp
           </a>

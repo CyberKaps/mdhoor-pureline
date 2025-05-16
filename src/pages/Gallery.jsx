@@ -5,7 +5,7 @@
 const Gallery = () => (
 
 
-<div style={{ height: '600px', position: 'relative' }}>
+<div className="bg-[#95be47]" style={{ height: '600px', position: 'relative' }}>
   <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
 </div>
 )
