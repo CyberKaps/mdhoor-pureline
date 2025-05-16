@@ -72,7 +72,7 @@ import "../App.css"
         }, []);
 
     return (
-        <section id="Theme" className=" text-white py-16 bg-[#ECE852] raleway ">
+        <section id="Theme" className=" text-white py-16 bg-[#f5f181] raleway ">
         <div className="container mx-auto px-4 ">
             <h2 className="text-5xl mb-12 text-center text-white">
             Our Products

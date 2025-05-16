@@ -75,32 +75,32 @@ const Contact = () => {
           <input
             {...register('name')}
             placeholder="Name"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#95be47]"
             required
           />
           <input
             {...register('email')}
             type="email"
             placeholder="Email"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#95be47]"
             required
           />
           <input
             {...register('mobile')}
             type="mobile"
             placeholder="Mobile"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#95be47]"
             required
           />
           <textarea
             {...register('message')}
             placeholder="Message"
-            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#9BEC00]"
+            className="w-full p-3 border border-olive rounded bg-white focus:outline-none focus:ring-2 focus:ring-[#95be47]"
             required
           />
           <button
             type="submit"
-            className="bg-[#9BEC00] text-white font-semibold py-2 px-6 rounded-xl hover:bg-yellow-500 transition"
+            className="bg-[#95be47] text-white font-semibold py-2 px-6 rounded-xl hover:bg-yellow-500 transition"
           >
             Send
           </button>
@@ -109,18 +109,18 @@ const Contact = () => {
         {/* Contact Info */}
         <div className="pt-6 space-y-2 text-lg raleway">
           <p>
-            📞 <a href="tel:+918530761040" className="text-[#9BEC00] hover:underline">+91-853076xxxx</a>
+            📞 <a href="tel:+919423041414" className="text-[#95be47] hover:underline">+919423041414</a>
           </p>
           <p>
-            ✉️ <a href="mailto:madhoorpureline@gmail.com" className="text-[#9BEC00] hover:underline">madhoorpureline@gmail.com</a>
+            ✉️ <a href="mailto:madhoorpureline@gmail.com" className="text-[#95be47] hover:underline">madhoorpureline@gmail.com</a>
           </p>
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/918530761040"
+            href="https://wa.me/919423041414"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 bg-[#9BEC00] hover:bg-yellow-500 text-white font-bold py-2 px-6 rounded-xl shadow transition"
+            className="inline-block mt-4 bg-[#95be47] hover:bg-yellow-500 text-white font-bold py-2 px-6 rounded-xl shadow transition"
           >
             Chat on WhatsApp
           </a>
