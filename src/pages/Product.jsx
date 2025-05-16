@@ -2,73 +2,101 @@ import { motion } from 'framer-motion'
 import TiltedCard from '../components/TitledCard'
 import image from "../assets/oilbottle.jpg"
 
-const products = [
-  {
-    name: 'Groundnut Oil',
-    image: './bgImg.png',
-    description: 'Cold-pressed groundnut oil without colestrol and zero transfat.',
-  },
-  {
-    name: 'Coconut Oil',
-    image: './bgImg.png',
-    description: 'Naturally extracted from organic coconuts.',
-  },
-  {
-    name: 'Jaggery',
-    image: './bgImg.png',
-    description: 'Traditional sesame oil for cooking and wellness.',
-  },
-  {
-    name: 'Jaggery Powder',
-    image: './bgImg.png',
-    description: 'Traditional sesame oil for cooking and wellness.',
-  },
-]
 
-const Products = () => (
-
-<motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="px-6 md:px-16 py-16 bg-beige text-olive"
-    >
-
-            <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-lime-100 via-yellow-100 to-amber-100"></div>
-  {/* <section className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-    {products.map((p) => (
-      <div key={p.name} className="bg-white rounded-2xl shadow p-4">
-        <img src={p.image} alt={p.name} className="rounded-xl mb-4" />
-        <h3 className="text-xl font-serif text-olive">{p.name}</h3>
-        <p>{p.description}</p>
-      </div>
-    ))}
-  </section> */}
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 
 
-    <TiltedCard
-      imageSrc={image}
-      altText="Kendrick Lamar - GNX Album Cover"
-      captionText="Kendrick Lamar - GNX"
-      containerHeight="300px"
-      containerWidth="300px"
-      imageHeight="300px"
-      imageWidth="300px"
-      rotateAmplitude={12}
-      scaleOnHover={1.2}
-      showMobileWarning={false}
-      showTooltip={true}
-      displayOverlayContent={true}
-      overlayContent={
-        <p className="tilted-card-demo-text">
-          Groundnut Oil
-        </p>
-      }
-    />
-  
 
-  </motion.section>
-)
-export default Products
+
+
+    const themes = [
+    {
+        
+        title: "Coconut Oil",
+        
+    },
+    {
+       
+        title: "Groundnut oil",
+      
+    },
+    {
+      
+        title: "Jaggery",
+        },
+    {
+       
+        title: "Jaggery Powder",
+         },
+    {
+        
+        title: "Groundnut Cake",
+     
+    },
+    {
+        
+        title: "Sunflower oil",
+           },
+
+
+    ];
+
+    const Product = () => {
+        const cardRefs = useRef([]);
+
+        useEffect(() => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            cardRefs.current.forEach((card, index) => {
+                gsap.fromTo(
+                    card,
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 80%",
+                            end: "bottom 20%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            });
+        }, []);
+
+    return (
+        <section id="Theme" className="font-[Ghr4]  text-white py-16 bg-yellow-400 ">
+        <div className="container mx-auto px-4 ">
+            <h2 className="font-[Ghr4] text-5xl mb-12 text-center text-white">
+            Our Products
+            </h2>
+            <div className=" grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8 items-cente justify-center">
+            {themes.map((theme, index) => (
+                <div
+                key={index}
+                ref={(el) => (cardRefs.current[index] = el)} 
+                className="theme-card h-56 bg-gradient-to-r from-[#82e75a] to-[#f3f73b] rounded-lg p-6 flex flex-col items-center shadow-lg transition-transform transform hover:scale-110"
+                >
+                <img
+                    src={theme.image}
+                    alt={theme.title}
+                    className="w-52 h-24 object-contain mb-4  "
+                />
+                <h3 className="text-xl font-semibold text-center">
+                    {theme.title}
+                </h3>
+                </div>
+            ))}
+            </div>
+        </div>
+        </section>
+    );
+    };
+
+    export default Product;

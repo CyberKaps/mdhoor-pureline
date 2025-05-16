@@ -31,8 +31,12 @@ function App() {
       <Navbar />
       <Home />
       <HeroCorousel />
+      <About />
       <Product />
+      <Process />
       <Gallery />
+      <Contact />
+       <Footer />
       {/* <About />
       <Product />
       <Process />

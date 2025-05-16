@@ -32,10 +32,10 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <h1 className="text-6xl md:text-[100px] font-serif text-olive mb-4 leading-tigh raleway-heading text-lime-500 gradient-text">
+          <h1 className="text-6xl md:text-[110px] font-serif text-olive mb-4 leading-tigh raleway-heading text-lime-500 gradient-text">
             <SplitText
               text="Madhoor Pureline"
-              className="font-semibold text-center"
+              className="font-extrabold text-center text-shadow-lg text-shadow-gray-200"
               delay={150}
               animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
               animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
