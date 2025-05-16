@@ -1,0 +1,82 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Font Classes */
+.raleway-heading {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+/* .gradient-text {
+  background: -webkit-linear-gradient(#68e913, #f5b914);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* Layout Styling */
+.hero-wrapper {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text Container */
+.hero-text-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Dotted Background only around the text */
+.animated-dots {
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: -100px;
+  right: -100px;
+  background-image: radial-gradient(#e42200 3px, transparent 3px);
+  background-size: 40px 40px;
+  animation: moveDots 25s linear infinite;
+  opacity: 0.25;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 30px;
+}
+
+/* Dot movement */
+@keyframes moveDots {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 80px 80px;
+  }
+}
+
+/* Text Styling */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+}
+.subheading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}

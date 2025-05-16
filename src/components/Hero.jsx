@@ -1,5 +1,12 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import "../App.css"
+import SplitText from "./SplitText";
+
+
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 
 const Hero = () => {
   return (
@@ -9,6 +16,9 @@ const Hero = () => {
       transition={{ duration: 1 }}
       className=" h-[90vh] w-full overflow-hidden"
     >
+
+      {/* <div className="animated-dots" /> */}
+
       {/* Background Image with Blur */}
       <div
         className="absolute inset-0 bg-cover bg-center filter blur-sm scale-105"
@@ -21,13 +31,22 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="bg-white/70 backdrop-blur-md px-6 py-8 rounded-3xl shadow-xl max-w-xl"
         >
-          <h1 className="text-4xl md:text-6xl font-serif text-olive mb-4 leading-tight">
-            Madhoor Pureline
+          <h1 className="text-6xl md:text-[100px] font-serif text-olive mb-4 leading-tigh raleway-heading text-lime-500 gradient-text">
+            <SplitText
+              text="Madhoor Pureline"
+              className="font-semibold text-center"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+              onLetterAnimationComplete={handleAnimationComplete}
+            />
           </h1>
-          <p className="text-xl md:text-2xl font-medium text-gray-700">
-            Hydraulic Cold-Press Oil
+          <p className="text-2xl md:text-4xl font-medium text-gray-700">
+            The Pure Promise
           </p>
 
           <motion.div
@@ -44,6 +63,19 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
+
+
+        {/* <div className="animated-dots" />
+
+        <div className="h-[97vh] relative flex flex-col text-center bg-orange-50/10 text-gray-800 gap-2 items-center z-10 justify-center ">
+            <div className="text-4xl md:text-[80px] font-extrabold text-black/75 md:leading-[10vh] px-[20vw] raleway-heading">
+                Madhoor Pureline <span className="text-[#f96a50]"></span> 
+            </div>
+            <div className="text-lg md:text-4xl text-black/60 leading-6 md:w-[60%] w-[95%] font-bold mb-2 font-extra px-5 mt- raleway">
+                The Pure Promise
+            </div>
+        </div> */}
+
     </motion.section>
   )
 }

@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import TiltedCard from '../components/TitledCard'
+import image from "../assets/oilbottle.jpg"
 
 const products = [
   {
@@ -33,7 +35,7 @@ const Products = () => (
     >
 
             <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-lime-100 via-yellow-100 to-amber-100"></div>
-  <section className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+  {/* <section className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
     {products.map((p) => (
       <div key={p.name} className="bg-white rounded-2xl shadow p-4">
         <img src={p.image} alt={p.name} className="rounded-xl mb-4" />
@@ -41,7 +43,32 @@ const Products = () => (
         <p>{p.description}</p>
       </div>
     ))}
-  </section>
+  </section> */}
+
+
+
+
+    <TiltedCard
+      imageSrc={image}
+      altText="Kendrick Lamar - GNX Album Cover"
+      captionText="Kendrick Lamar - GNX"
+      containerHeight="300px"
+      containerWidth="300px"
+      imageHeight="300px"
+      imageWidth="300px"
+      rotateAmplitude={12}
+      scaleOnHover={1.2}
+      showMobileWarning={false}
+      showTooltip={true}
+      displayOverlayContent={true}
+      overlayContent={
+        <p className="tilted-card-demo-text">
+          Groundnut Oil
+        </p>
+      }
+    />
+  
+
   </motion.section>
 )
 export default Products
