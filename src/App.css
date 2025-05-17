@@ -81,6 +81,22 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+
+.bg-gradient-comp {
+  /* background: linear-gradient(180deg, #ECE852 0%, #f5f181 50%, #95be47 100%); */
+  /* background: linear-gradient(135deg, #ECE852 0%, #f5f181 30%, #95be47 70%); */
+  /* background: linear-gradient(135deg, #ECE852 0%, #f5f181 50%, #95be47 100%); */
+
+
+ background: linear-gradient(180deg, #a0c954 0%, #f5f181 50%, #f3ee61 100%);
+  background-size: 100% 200%;
+  animation: gradientMove 3s ease-in-out infinite; 
+ 
+
+
+
+}
+
 .bg-gradient {
   /* background: linear-gradient(180deg, #ECE852 0%, #f5f181 50%, #95be47 100%); */
   /* background: linear-gradient(135deg, #ECE852 0%, #f5f181 30%, #95be47 70%); */
