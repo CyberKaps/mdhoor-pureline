@@ -3,8 +3,8 @@ import appImage from "../assets/madhoorPureline.png";
 
 const GroundnutOil = () => {
   return (
-    <section className="bg-[#fff7f6] py-2">
-      <h1 className="raleway-heading text-4xl md:text-7xl lg:text-8xl mt-4 text-[#9BEC00] text-center">
+    <section className="bg-[#] py-2">
+      <h1 className="raleway-heading text-4xl md:text-7xl lg:text-8xl mt-4 text-black/60 text-center">
         Groundnut Oil
       </h1>
       <div className="flex justify-around">

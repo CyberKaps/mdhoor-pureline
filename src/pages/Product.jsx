@@ -10,10 +10,6 @@ import "../App.css"
 
 
 
-
-
-
-
     const themes = [
     {
         
@@ -72,7 +68,7 @@ import "../App.css"
         }, []);
 
     return (
-        <section id="Theme" className=" text-white py-16 bg-[#f5f181] raleway ">
+        <section id="Theme" className=" text-white py-16 bg-[#] raleway ">
         <div className="container mx-auto px-4 ">
             <h2 className="text-5xl mb-12 text-center text-white">
             Our Products
@@ -82,7 +78,7 @@ import "../App.css"
                 <div
                 key={index}
                 ref={(el) => (cardRefs.current[index] = el)} 
-                className="theme-card h-56 bg-gradient-to-r from-[#82e75a] to-[#f3f73b] rounded-lg p-6 flex flex-col items-center shadow-lg transition-transform transform hover:scale-110"
+                className="theme-card h-56 bg-gradient-to-r from-[#ECE852] to-[#95be47] rounded-lg p-6 flex flex-col items-center shadow-lg transition-transform transform hover:scale-110"
                 >
                 <img
                     src={theme.image}
