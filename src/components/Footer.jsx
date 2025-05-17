@@ -1,62 +1,56 @@
-import { div } from "framer-motion/client";
-import { Link } from "react-router-dom"
-import { FaInstagramSquare } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { FaInstagramSquare, FaFacebookSquare, FaWhatsappSquare } from 'react-icons/fa';
+import "../App.css";
 
-const Footer = () => (
-  <div>
-    {/* Main Footer */}
-    <footer className="bg-[#95be47]">
-      <div className="mx-auto w-full max-w-screen-xl px-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between md:items-start">
-          {/* Left - Logo or Title */}
-          <div className="mb-6 md:mb-0">
-            <a href="#" className="flex items-center">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                Madhoor Pureline
-              </span>
-            </a>
+const Footer = () => {
+  return (
+    <>
+      {/* Main Footer Section */}
+      <footer className="bg-[#95be47] text-white px-6 py-10">
+        <div className='text-center mb-7 text-2xl font-extrabold'>
+          Madhoor Pureline
+        </div>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
+
+
+          {/* Address */}
+          <div>
+            <h2 className="mb-2 text-sm font-semibold uppercase">Address</h2>
+            <p>78, Garkheda BK. Bhusawal Road,<br />Jamner, Jalgaon, MH - 424206</p>
           </div>
 
-          {/* Right - Address & Contact */}
-          <div className="flex flex-col sm:flex-row gap-10 text-white">
-            <div>
-              <h2 className="mb-2 text-sm font-semibold uppercase">Address</h2>
-              <p className="max-w-xs">
-                78, Garkheda BK. Bhusawal Road, Jamner, Jalgaon, MH - 424206
-              </p>
-            </div>
+          {/* Contact */}
+          <div>
+            <h2 className="mb-2 text-sm font-semibold uppercase">Contact</h2>
+            <p>📞 +91 94230 41414</p>
+            <p>✉ madhoorpureline@gmail.com</p>
+            <Link to="/contact" className="underline text-white">More</Link>
+          </div>
 
-            <div>
-              <p className="mb-2 text-sm font-semibold uppercase">Contact</p>
-              <p className="max-w-xs">+91-9876543210</p>
-              <p className="max-w-xs">madhoorpureline@gmail.com</p>
-
-              <Link className="underline" to="/contact" >More</Link>
-            </div>
-
-            <div className="flex flex-col">
-              <p className="mb-2 text-sm font-semibold uppercase">Social Media</p>
-              <a className="w-"><FaInstagramSquare /></a>
-              <a className="max-w-xs"></a>
-              <a className="underline" ></a>
+          {/* Social Media */}
+          <div>
+            <h2 className="mb-2 text-sm font-semibold uppercase">Follow Us</h2>
+            <div className="flex gap-4 text-2xl">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <FaInstagramSquare className="hover:text-yellow-300 transition" />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <FaFacebookSquare className="hover:text-yellow-300 transition" />
+              </a>
+              <a href="https://wa.me/919423041414" target="_blank" rel="noopener noreferrer">
+                <FaWhatsappSquare className="hover:text-yellow-300 transition" />
+              </a>
             </div>
           </div>
         </div>
+      </footer>
 
-        {/* <hr className="my-6 border-white sm:mx-auto"  /> */}
-
-        {/* Bottom section (hidden icons removed) */}
-        {/* <div className="text-center text-white text-sm">
-          Crafted with care by Madhoor Pureline
-        </div> */}
-      </div>
-    </footer>
-
-    {/* Copyright Footer */}
-    <footer className="bg-[#ECE852] text-black text-center p-4">
-      &copy; {new Date().getFullYear()} Madhoor Pureline | All rights reserved
-    </footer>
-  </div>
-);
+      {/* Copyright */}
+      <footer className="bg-[#ECE852] text-black text-center p-4 text-sm">
+        &copy; {new Date().getFullYear()} Madhoor Pureline | All rights reserved
+      </footer>
+    </>
+  );
+};
 
 export default Footer;

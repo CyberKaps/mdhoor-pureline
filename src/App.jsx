@@ -17,18 +17,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
 
-      {/* <div style={{ width: '100%', height: '600px', position: 'absolute' }}>
-  <Particles
-    particleColors={['#e74040', '#e74040']}
-    particleCount={200}
-    particleSpread={10}
-    speed={0.1}
-    particleBaseSize={100}
-    moveParticlesOnHover={true}
-    alphaParticles={false}
-    disableRotation={false}
-  />
-</div> */}
+     
       <div className="pt-16 bg-gradient">
         <Routes>
           <Route path="/" element={<Home />} />

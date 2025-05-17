@@ -10,7 +10,7 @@ const About = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="px-6 md:px-16 py-16 text-olive mt-20 w-[100%]" 
+      className="px-6 md:px-16 py-16 text-olive mt- w-[100%]" 
     >
         <div className="absolute inset-0 -z-10 animate-gradient "></div>
       <div className="max-w-7xl mx-auto">
