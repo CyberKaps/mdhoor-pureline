@@ -1,4 +1,5 @@
 import { div } from "framer-motion/client";
+import { Link } from "lucide-react";
 
 const Footer = () => (
   <div>
@@ -25,7 +26,7 @@ const Footer = () => (
             </div>
 
             <div>
-              <h2 className="mb-2 text-sm font-semibold uppercase">Contact</h2>
+              <Link className="mb-2 text-sm font-semibold uppercase">Contact</Link>
               <p className="max-w-xs">+91-9876543210</p>
               <p className="max-w-xs">madhoorpureline@gmail.com</p>
             </div>
