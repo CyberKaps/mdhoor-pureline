@@ -1,5 +1,6 @@
 import { div } from "framer-motion/client";
-import { Link } from "lucide-react";
+import { Link } from "react-router-dom"
+import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => (
   <div>
@@ -26,9 +27,18 @@ const Footer = () => (
             </div>
 
             <div>
-              <Link className="mb-2 text-sm font-semibold uppercase">Contact</Link>
+              <p className="mb-2 text-sm font-semibold uppercase">Contact</p>
               <p className="max-w-xs">+91-9876543210</p>
               <p className="max-w-xs">madhoorpureline@gmail.com</p>
+
+              <Link className="underline" to="/contact" >More</Link>
+            </div>
+
+            <div className="flex flex-col">
+              <p className="mb-2 text-sm font-semibold uppercase">Social Media</p>
+              <a className="w-"><FaInstagramSquare /></a>
+              <a className="max-w-xs"></a>
+              <a className="underline" ></a>
             </div>
           </div>
         </div>
