@@ -3,11 +3,11 @@ import "../App.css";
 
 const videos = [
   { src: "/videos/process1.mp4", label: "Kalpesh" },
-  { src: "/videos/process2.mp4", label: "Kalpesh" },
-  { src: "/videos/process3.mp4", label: "Kalpesh" },
-  { src: "/videos/process4.mp4", label: "Kalpesh" },
-  { src: "/videos/process5.mp4", label: "Kalpesh" },
-  { src: "/videos/process6.mp4", label: "Kalpesh" },
+  { src: "/videos/process1.mp4", label: "Kalpesh" },
+  { src: "/videos/process1.mp4", label: "Kalpesh" },
+  { src: "/videos/process1.mp4", label: "Kalpesh" },
+  { src: "/videos/process1.mp4", label: "Kalpesh" },
+  { src: "/videos/process1.mp4", label: "Kalpesh" },
 ];
 
 const Process = () => {
