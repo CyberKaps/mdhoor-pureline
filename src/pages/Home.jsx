@@ -1,3 +1,6 @@
+
+
+import ComparisonTable from '../components/ComparisonTable'
 import DidYouKnowCarousel from '../components/DidYouKnowCarousel'
 import Footer from '../components/Footer'
 import GroundnutOil from '../components/GroundnutOil'
@@ -13,8 +16,10 @@ const Home = () => (
     <Hero />
     <GroundnutOil />
     <WhyMadhoor />
-    <SustainabilityPledge />
+    {/* <SustainabilityPledge /> */}
     <DidYouKnowCarousel />
+    <ComparisonTable />
+  
     
    </div>
    
