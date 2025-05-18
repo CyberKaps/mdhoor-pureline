@@ -4,7 +4,7 @@ import "../App.css"
 
 const GroundnutOil = () => {
   return (
-    <section className="bg-[#] bg-gradient-comp py-2">
+    <section className="bg-[#] bg-gradient py-2">
       <h1 className="raleway-heading text-4xl md:text-7xl lg:text-8xl mt-4 text-black/60 text-center">
         Groundnut Oil
       </h1>
