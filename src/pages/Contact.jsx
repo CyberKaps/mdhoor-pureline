@@ -128,7 +128,7 @@ const Contact = () => {
           {/* Map */}
           <div className="rounded-lg overflow-hidden mt-6 shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3728.4913665401023!2d75.78861418335129!3d20.852235989991623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDUxJzA4LjEiTiA3NcKwNDcnMjUuNyJF!5e0!3m2!1sen!2sin!4v1747560944097!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4311.068134228645!2d75.78789577583099!3d20.852236280753353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd99f0074a40df3%3A0x6da9d81c1ba7e693!2sMadhoor%20Pureline!5e1!3m2!1sen!2sin!4v1747651027759!5m2!1sen!2sin"
               className="w-full h-64 rounded-xl"
               allowFullScreen=""
               loading="lazy"

@@ -66,10 +66,10 @@ const ProductIntroCarousel = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-                <h1 className="raleway-heading text-4xl md:text-5xl lg:text-6xl text-black/60 text-center mb-5">
+                <h1 className="raleway-heading text-4xl md:text-5xl lg:text-7xl text-black/60 text-center mb-5">
         {products[current].name}
       </h1>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
+              <h2 className="text-2xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
                 {products[current].heading}: lorem,<br />
                 ipsum. <span className="text-[#FF6C4A]">{products[current].highlight}</span>
               </h2>
@@ -97,16 +97,16 @@ const ProductIntroCarousel = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-center gap-6 mt-2">
+      <div className="flex justify-center gap-6 mt-">
         <button
           onClick={prev}
-          className="bg-[#FF6C4A] text-white px-4 py-2 rounded-full hover:bg-orange-600 transition"
+          className="bg-[#95be47] text-white px-4 py-2 rounded-full hover:bg-lime-600 transition"
         >
           ⟵ Prev
         </button>
         <button
           onClick={next}
-          className="bg-[#FF6C4A] text-white px-4 py-2 rounded-full hover:bg-orange-600 transition"
+          className="bg-[#95be47] text-white px-4 py-2 rounded-full hover:bg-lime-600 transition"
         >
           Next ⟶
         </button>

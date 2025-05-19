@@ -59,7 +59,7 @@ const Hero = () => {
             </Link>
           </motion.div>
         </motion.div>
-      </div>
+      </div>  
     </motion.section>
   )
 }
