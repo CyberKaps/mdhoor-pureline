@@ -34,6 +34,51 @@ const oils = {
       "Natural moisturizer",
     ],
   },
+   "sunflower-oil": {
+    name: "Sunflower Oil",
+    image: image,
+    description:
+      "Naturally extracted, great for hair, skin, and cooking. No chemicals.",
+    benefits: [
+      "MCT-rich energy",
+      "Antibacterial",
+      "Natural moisturizer",
+    ],
+  },
+   "jaggery-powder": {
+    name: "Jaggery Powder",
+    image: image,
+    description:
+      "Naturally extracted, great for hair, skin, and cooking. No chemicals.",
+    benefits: [
+      "MCT-rich energy",
+      "Antibacterial",
+      "Natural moisturizer",
+    ],
+  },
+   "groundnut-cake": {
+    name: "Groundnut cake",
+    image: image,
+    description:
+      "Naturally extracted, great for hair, skin, and cooking. No chemicals.",
+    benefits: [
+      "MCT-rich energy",
+      "Antibacterial",
+      "Natural moisturizer",
+    ],
+  },
+   "jaggery": {
+    name: "Jaggery",
+    image: image,
+    description:
+      "Naturally extracted, great for hair, skin, and cooking. No chemicals.",
+    benefits: [
+      "MCT-rich energy",
+      "Antibacterial",
+      "Natural moisturizer",
+    ],
+  },
+  
 };
 
 const ProductDetail = () => {
@@ -51,7 +96,7 @@ const ProductDetail = () => {
 
     emailjs
       .sendForm(
-        "your_service_id",        // Replace with your EmailJS Service ID
+        "service_x62uc0d",        // Replace with your EmailJS Service ID
         "your_template_id",       // Replace with your EmailJS Template ID
         formRef.current,
         "your_public_key"         // Replace with your EmailJS Public API Key
