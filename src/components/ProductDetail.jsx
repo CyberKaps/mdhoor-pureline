@@ -24,7 +24,7 @@ const oils = {
     ],
   },
   "coconut-oil": {
-    name: "Virgin Coconut Oil",
+    name: "Coconut Oil",
     image: image,
     description:
       "Naturally extracted, great for hair, skin, and cooking. No chemicals.",

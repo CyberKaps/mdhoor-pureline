@@ -14,12 +14,12 @@ const oils = [
     slug: "mustard-oil",
   },
   {
-    name: "Virgin Coconut Oil",
+    name: "Coconut Oil",
     image: image,
     slug: "coconut-oil",
   },
   {
-    name: "Extra Virgin Olive Oil",
+    name: "Olive Oil",
     image: image,
     slug: "olive-oil",
   },
