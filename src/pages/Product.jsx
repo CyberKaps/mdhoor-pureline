@@ -99,7 +99,7 @@ const Product = () => {
 
               {/* Click Here Button */}
               <Link to={`/product/${theme.slug}`}>
-                <button className="mt-4 w-full bg-[#ff6c4a] text-white py-2 px-4 rounded hover:bg-orange-600 transition">
+                <button className="mt-4 w-full bg-[#95be47] text-white py-2 px-4 rounded hover:bg-orange-600 transition">
                   Click Here
                 </button>
               </Link>

@@ -130,7 +130,7 @@ const ProductDetail = () => {
 
           <button
             onClick={() => setShowForm(true)}
-            className="bg-[#ff6c4a] text-white px-6 py-2 rounded hover:bg-orange-600 transition"
+            className="bg-[#95be47] text-white px-6 py-2 rounded hover:bg-orange-600 transition"
           >
             Enquiry
           </button>
