@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import GroundnutOil from '../components/GroundnutOil'
 import Hero from '../components/Hero'
 import IngredientStory from '../components/IngredientStory'
+import OilProductsSection from '../components/OilProductsSection'
 import ProductIntroCarousel from '../components/ProductIntroCarousel'
 import ProductQuiz from '../components/ProductQuiz'
 import SustainabilityPledge from '../components/SustainabilityPledge'
@@ -17,6 +18,7 @@ const Home = () => (
   <>
    <div>
     <Hero />
+    <OilProductsSection />
     <ProductIntroCarousel />
     <WhyMadhoor />
     {/* <SustainabilityPledge /> */}

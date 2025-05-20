@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import appImage from "../assets/madhoorPureline.png"; 
+import Splash from "../assets/oil_splashing.png"; 
+
+
 
 import "../App.css";
 
 const products = [
   {
     name: "Groundnut Oil",
-    image: appImage,
+    image: Splash,
     heading: "Introducing Groundnut Oil",
     highlight: "Edible oil",
     description:
@@ -66,7 +69,7 @@ const ProductIntroCarousel = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-                <h1 className="raleway-heading text-4xl md:text-5xl lg:text-7xl text-black/60 text-center mb-5">
+                <h1 className="raleway-heading text-4xl md:text-5xl lg:text-7xl text-black text-center mb-5">
         {products[current].name}
       </h1>
               <h2 className="text-2xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
