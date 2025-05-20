@@ -46,9 +46,6 @@ madhoor-pureline/
 
 ---
 
-## 📷 Preview
-
-> *You can add a screenshot here once available by uploading to `/public` or using an image hosting link.*
 
 ---
 
