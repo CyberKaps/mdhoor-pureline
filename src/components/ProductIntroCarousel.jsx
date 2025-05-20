@@ -91,7 +91,7 @@ const ProductIntroCarousel = () => {
               <img
                 src={products[current].image}
                 alt={products[current].name}
-                className="w-full max-w-md drop-shadow-xl"
+                className="w- max-w-md drop-shadow-xl h-[50vh]"
               />
               <div className="absolute bg-[#FF6C4A] rounded-full w-72 h-72 -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20" />
             </motion.div>
