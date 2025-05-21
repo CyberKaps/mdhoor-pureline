@@ -115,8 +115,8 @@ const ProductDetail = () => {
   };
 
   return (
-    <section className="px-6 md:px-16 py-20 text-olive bg-[#fffaf0] relative">
-      <Link to="/" className="text-[#ff6c4a] underline mb-4 inline-block">← Back to products</Link>
+    <section className="px-6 md:px-16 py-20 text-olive bg-[#] relative">
+      <Link to="/products" className="text-[#ff6c4a] underline mb-4 inline-block">← Back to products</Link>
 
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <img src={product.image} alt={product.name} className="rounded-xl shadow-xl w-full" />
