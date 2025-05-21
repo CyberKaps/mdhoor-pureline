@@ -14,26 +14,17 @@ const oils = [
     slug: "coconut-oil",
   },
   {
-    name: "Olive Oil",
+    name: "Jaggery",
     image: image,
-    slug: "olive-oil",
+    slug: "jaggery",
   },
-  {
-    name: "Sesame Oil",
-    image: image,
-    slug: "sesame-oil",
-  },
-  {
-    name: "Sunflower Oil",
-    image: image,
-    slug: "sunflower-oil",
-  },
+  
 ];
 
 const OilProductsSection = () => {
   return (
     <section className="bg-[#] py-20 px-4 md:px-16 text-center text-olive">
-      <h2 className="text-4xl font-bold mb-12 raleway-heading">Our Cold Pressed Oils</h2>
+      <h2 className="text-4xl font-bold mb-12 raleway-heading">Our Bestseller</h2>
       <div className="flex flex-wrap justify-center gap-14">
         {oils.map((oil, index) => (
           <Link
@@ -47,7 +38,11 @@ const OilProductsSection = () => {
             <p className="mt-3 font-medium text-md md:text-lg">{oil.name}</p>
           </Link>
         ))}
+        
       </div>
+        <div  className="mt-4 underline">
+      <Link to={'/products'}>More Products</Link>
+        </div>
     </section>
   );
 };
