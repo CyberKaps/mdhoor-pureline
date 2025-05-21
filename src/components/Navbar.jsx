@@ -61,7 +61,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-[#ECE852] px-4 py-2 space-y-3 text-olive font-medium shadow-inner">
+        <div className="md:hidden bg-[#3D550C] px-4 py-2 space-y-3 text-olive font-medium shadow-inner">
           {navItems.map((item) => (
             <Link
               key={item.name}
