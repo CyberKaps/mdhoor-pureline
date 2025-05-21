@@ -62,7 +62,7 @@ const ProductQuiz = () => {
   };
 
   return (
-    <section className="bg-gradient py-20 px-6 md:px-16 text-olive">
+    <section className="bg-[#81B622] py-20 px-6 md:px-16 text-olive">
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold raleway-heading mb-2">Which Madhoor Product Suits You?</h2>
         <p className="text-lg text-gray-700">Take our 1-minute quiz and find your match.</p>

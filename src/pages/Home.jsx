@@ -18,13 +18,16 @@ const Home = () => (
   <>
    <div>
     <Hero />
-    <OilProductsSection />
     <ProductIntroCarousel />
-    <WhyMadhoor />
-    {/* <SustainabilityPledge /> */}
-    <DidYouKnowCarousel />
+    <OilProductsSection />
     <ComparisonTable />
     <ProductQuiz />
+
+    <DidYouKnowCarousel />
+
+    
+    <WhyMadhoor />
+    <SustainabilityPledge />
   
     
    </div>

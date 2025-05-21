@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       {/* Main Footer Section */}
-      <footer className="bg-[#95be47] text-white px-6 py-10">
+      <footer className="bg-[#59981A] text-white px-6 py-10">
         <div className='text-center mb-7 text-2xl font-extrabold'>
           Madhoor Pureline
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
       </footer>
 
       {/* Copyright */}
-      <footer className="bg-[#ECE852] text-black text-center p-4 text-sm">
+      <footer className="bg-[#3D550C] text-white text-center p-4 text-sm">
         &copy; {new Date().getFullYear()} Madhoor Pureline | All rights reserved
       </footer>
     </>

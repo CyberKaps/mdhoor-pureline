@@ -28,7 +28,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <h1 className="text-5xl sm:text-6xl md:text-[110px] font-serif text-olive mb-4 leading-tight raleway-heading text-[#9BEC00] gradient-text">
+          <h1 className="text-5xl sm:text-6xl md:text-[110px] font-serif text-olive mb-4 leading-tight raleway-heading text-[#59981A] gradient-text">
             <SplitText
               text="Madhoor Pureline"
               className="font-extrabold text-center text-shadow-lg text-shadow-gray-200"
@@ -53,7 +53,7 @@ const Hero = () => {
           >
             <Link
               to="/products"
-              className="mt-6 inline-block bg-[#95be47] text-white hover:bg-yellow-500 transition-colors text-sm sm:text-base md:text-lg font-bold py-2 px-5 sm:py-3 sm:px-6 rounded-xl shadow-lg"
+              className="mt-6 inline-block bg-[#59981A] text-white hover:bg-[#3D550C] transition-colors text-sm sm:text-base md:text-lg font-bold py-2 px-5 sm:py-3 sm:px-6 rounded-xl shadow-lg"
             >
               Explore More
             </Link>

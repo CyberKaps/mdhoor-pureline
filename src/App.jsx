@@ -7,7 +7,6 @@ import Product from './pages/Product'
 import Process from './pages/Process'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
-import { div } from 'framer-motion/client'
 import { Corousel } from './components/Corousel'
 import { HeroCorousel } from './components/HeroCorousel'
 import Particles from './components/Particles'
@@ -19,7 +18,7 @@ function App() {
       <Navbar />
 
      
-      <div className="pt-16 bg-gradient">
+      <div className="pt-15 bg-[#ECF87F]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />

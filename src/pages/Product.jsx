@@ -246,7 +246,7 @@ const Product = () => {
             </div> */}
 
             <Link to={`/product/${product.slug}`} className="mt-2">
-              <button className="w-full bg-[#95be47] text-white py-2 rounded-full font-semibold hover:bg-[#ECE852] transition">
+              <button className="w-full bg-[#59981A] text-white py-2 rounded-full font-semibold hover:bg-[#3D550C] transition">
                 Add to cart
               </button>
             </Link>

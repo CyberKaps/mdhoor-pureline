@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#ECE852]/80 transition-all duration-300">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#3D550C] text-white transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-xl font-bold text-olive raleway-heading">Madhoor Pureline</Link>
 

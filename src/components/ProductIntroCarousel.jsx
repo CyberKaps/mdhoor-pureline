@@ -103,13 +103,13 @@ const ProductIntroCarousel = () => {
       <div className="flex justify-center gap-6 mt-">
         <button
           onClick={prev}
-          className="bg-[#95be47] text-white px-4 py-2 rounded-full hover:bg-lime-600 transition"
+          className="bg-[#59981A] text-white px-4 py-2 rounded-full hover:[#3D550C] transition"
         >
           ⟵ Prev
         </button>
         <button
           onClick={next}
-          className="bg-[#95be47] text-white px-4 py-2 rounded-full hover:bg-lime-600 transition"
+          className="bg-[#59981A] text-white px-4 py-2 rounded-full hover:[#3D550C] transition"
         >
           Next ⟶
         </button>

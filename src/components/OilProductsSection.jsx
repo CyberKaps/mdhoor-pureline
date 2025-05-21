@@ -8,12 +8,7 @@ const oils = [
     image: image,
     slug: "groundnut-oil",
   },
-  {
-    name: "Mustard Oil",
-    image: image,
-    slug: "mustard-oil",
-  },
-  {
+    {
     name: "Coconut Oil",
     image: image,
     slug: "coconut-oil",
@@ -37,7 +32,7 @@ const oils = [
 
 const OilProductsSection = () => {
   return (
-    <section className="bg-[#fefae0] py-20 px-4 md:px-16 text-center text-olive">
+    <section className="bg-[#81B622] py-20 px-4 md:px-16 text-center text-olive">
       <h2 className="text-4xl font-bold mb-12 raleway-heading">Our Cold Pressed Oils</h2>
       <div className="flex flex-wrap justify-center gap-14">
         {oils.map((oil, index) => (
