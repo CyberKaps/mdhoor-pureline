@@ -26,7 +26,7 @@ const features = [
 
 const WhyMadhoor = () => {
   return (
-    <section className="bg-[#81B622] py-20 px-6 md:px-16 text-olive w-full raleway">
+    <section className="bg-[#] py-20 px-6 md:px-16 text-olive w-full raleway">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold raleway-heading mb-2">Why Madhoor Pureline?</h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">

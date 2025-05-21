@@ -49,7 +49,7 @@ const ProductIntroCarousel = () => {
   const prev = () => setCurrent((prev) => (prev - 1 + products.length) % products.length);
 
   return (
-    <section className="bg-gradient  py-10 text-olive relative overflow-hidden">
+    <section className="bg-  py-10 text-olive relative overflow-hidden">
       
 
       <div className="max-w-7xl mx-auto px-6">

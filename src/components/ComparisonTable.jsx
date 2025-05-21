@@ -1,6 +1,6 @@
 const ComparisonTable = () => {
   return (
-    <section className="bg-[#ECF87F] py-20 px-6 md:px-16 text-olive">
+    <section className="bg-[#] py-20 px-6 md:px-16 text-olive">
       <h2 className="text-4xl font-bold text-center mb-8 raleway-heading">Why Choose Madhoor Pureline Oil?</h2>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse border border-[#95be47] text-center">

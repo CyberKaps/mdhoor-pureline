@@ -21,7 +21,7 @@ const pledges = [
 
 const SustainabilityPledge = () => {
   return (
-    <section className="bg-white py-20 px-6 md:px-16 text-olive">
+    <section className="bg- py-20 px-6 md:px-16 text-olive">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold raleway-heading mb-2">Our Sustainability Pledge</h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">

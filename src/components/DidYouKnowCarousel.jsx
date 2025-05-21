@@ -22,7 +22,7 @@ const DidYouKnowCarousel = () => {
   }, []);
 
   return (
-    <section className="relative text-olive py-20 px-4 md:px-16 overflow-hidden bg-[#ECF87F]">
+    <section className="relative text-olive py-20 px-4 md:px-16 overflow-hidden bg-[#]">
 
 
       {/* Content */}

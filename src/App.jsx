@@ -18,7 +18,7 @@ function App() {
       <Navbar />
 
      
-      <div className="pt-15 bg-[#ECF87F]">
+      <div className="pt-15 bg-gradient">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
