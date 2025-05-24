@@ -197,7 +197,7 @@ const cards = [
     src: img,
     ctaText: "Know more",
     ctaText2: "Enquire now",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://wa.me/919423041414",
     content: () => {
       return (
         <p>Lana Del Rey, an iconic American singer-songwriter, is celebrated for
@@ -220,7 +220,7 @@ const cards = [
     src: img,
     ctaText: "Know more",
     ctaText2: "Enquire now",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://wa.me/919423041414",
     content: () => {
       return (
         <p>Babu Maan, a legendary Punjabi singer, is renowned for his soulful
@@ -243,7 +243,7 @@ const cards = [
     src: img,
     ctaText: "Know more",
     ctaText2: "Enquire now",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://wa.me/919423041414",
     content: () => {
       return (
         <p>Metallica, an iconic American heavy metal band, is renowned for their
@@ -265,7 +265,7 @@ const cards = [
     src: img,
     ctaText: "Know more",
     ctaText2: "Enquire now",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://wa.me/919423041414",
     content: () => {
       return (
         <p>Led Zeppelin, a legendary British rock band, is renowned for their
@@ -286,7 +286,7 @@ const cards = [
     src: img,
     ctaText: "Know more",
     ctaText2: "Enquire now",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://wa.me/919423041414",
     content: () => {
       return (
         <p>"Aawarapan", a Bollywood movie starring Emraan Hashmi, is
