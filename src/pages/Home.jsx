@@ -12,23 +12,38 @@ import ProductIntroCarousel from '../components/ProductIntroCarousel'
 import ProductQuiz from '../components/ProductQuiz'
 import SustainabilityPledge from '../components/SustainabilityPledge'
 import TestimonialsCarousel from '../components/TestimonialsCarousel'
+
 import WhyMadhoor from '../components/WhyMadhoor'
 import About from './About'
 
-const Home = () => (
-  <>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
+
+const Home = () => {
+
+
+  useEffect(() => {
+  AOS.init({ duration: 1000 }) // animation duration in ms
+}, [])
+
+
+  
+  return <>
    <div>
-    <Hero />
-    <ProductIntroCarousel />
-    <OilProductsSection />
-    <ComparisonTable />
-    <ProductQuiz />
 
-    <DidYouKnowCarousel />
 
-    
-    <WhyMadhoor />
-    <SustainabilityPledge />
+          <div data-aos="fade-up"><Hero /></div>
+          <div data-aos="fade-right"><ProductIntroCarousel /></div>
+          <div data-aos="fade-up"><OilProductsSection /></div>
+          <div data-aos="zoom-in"><ComparisonTable /></div>
+          <div data-aos="fade-left"><ProductQuiz /></div>
+          <div data-aos="fade-up"><DidYouKnowCarousel /></div>
+          <div data-aos="fade-right"><WhyMadhoor /></div>
+          <div data-aos="fade-up"><SustainabilityPledge /></div>
+
+
 
     {/* <ExpandableProducts /> */}
   
@@ -37,7 +52,7 @@ const Home = () => (
    
     
   </>
-)
+}
 export default Home
 
 

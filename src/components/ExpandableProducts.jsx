@@ -1,8 +1,12 @@
-"use client";
+
 
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "../hooks/useOutsideClick";
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 export function ExpandableProducts() {
   const [active, setActive] = useState(null);
@@ -26,10 +30,23 @@ export function ExpandableProducts() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 }) // animation duration in ms
+  }, [])
+
   useOutsideClick(ref, () => setActive(null));
 
+
+
+
+
+
+
+
+
   return (
-    <>
+ 
+    <div>
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -64,7 +81,7 @@ export function ExpandableProducts() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-[#3D550C] sm:rounded-3xl overflow-hidden">
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-[#3d550c] sm:rounded-3xl overflow-hidden">
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
                   width={200}
@@ -93,7 +110,7 @@ export function ExpandableProducts() {
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-white text-black">
+                    className="px-4 py-3 text-sm rounded-full font-bold bg-[#59981A] hover:bg-[#] text-black">
                     {active.ctaText2}
                   </motion.a>
                 </div>
@@ -120,7 +137,7 @@ export function ExpandableProducts() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-[#59981A] rounded-xl cursor-pointer">
+            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-[#59981A]/50 rounded-xl cursor-pointer">
             <div className="flex gap-4 flex-col md:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <img
@@ -145,13 +162,14 @@ export function ExpandableProducts() {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-[#3D550C] hover:text-white text-black mt-4 md:mt-0">
+              className="px-4 py-2 text-sm rounded-full font-bold bg-[#59981A] hover:bg-[#3D550C] hover:text-white text-black mt-4 md:mt-0">
               {card.ctaText}
             </motion.button>
           </motion.div>
         ))}
       </ul>
-    </>
+    </div>
+  
   );
 }
 
@@ -189,6 +207,7 @@ export const CloseIcon = () => {
 
 
 import img from "../assets/coconut.jpg"
+
 
 const cards = [
   {
