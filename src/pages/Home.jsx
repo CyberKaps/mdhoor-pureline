@@ -38,7 +38,7 @@ const Home = () => {
           <div data-aos="fade-right"><ProductIntroCarousel /></div>
           <div data-aos="fade-up"><OilProductsSection /></div>
           <div data-aos="zoom-in"><ComparisonTable /></div>
-          <div data-aos="fade-left"><ProductQuiz /></div>
+          <div data-aos="fade-right"><ProductQuiz /></div>
           <div data-aos="fade-up"><DidYouKnowCarousel /></div>
           <div data-aos="fade-right"><WhyMadhoor /></div>
           <div data-aos="fade-up"><SustainabilityPledge /></div>
