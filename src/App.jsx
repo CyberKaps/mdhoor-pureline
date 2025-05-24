@@ -10,7 +10,9 @@ import Contact from './pages/Contact'
 import { Corousel } from './components/Corousel'
 import { HeroCorousel } from './components/HeroCorousel'
 import Particles from './components/Particles'
-import ProductDetail from "./components/ProductDetail";
+// import ProductDetail from "./components/ProductDetail";
+import { ExpandableProducts } from './components/ExpandableProducts'
+import { div } from 'framer-motion/client'
 
 function App() {
   return (
@@ -22,11 +24,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
-          <Route path="/products" element={<Product />} />
+          {/* <Route path="/products" element={<Product />} /> */}
           <Route path="/our-process" element={<Process />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/product/:slug" element={<ProductDetail />} />
+          {/* <Route path="/product/:slug" element={<ProductDetail />} /> */}
+          <Route path="/products" element={<div className='pt-15 p-12'><ExpandableProducts /></div>} />
         </Routes>
       </div>
       <Footer />
